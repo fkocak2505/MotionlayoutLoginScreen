@@ -14,16 +14,9 @@
         <Constraint
             android:id="@+id/button_sticky"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Constraint
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_sticky"/>
     </ConstraintSet>
 
     <!-- The actual end state of the transition -->
@@ -31,16 +24,10 @@
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@id/button_sticky"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="56dp"
+            android:translationY="50dp"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <Constraint
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_sticky"/>
     </ConstraintSet>
 </MotionScene>

@@ -8,6 +8,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="awfawf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <!--  Add a MotionLayout as the bottom sheet with a BottomSheetBehaviour  -->
 
     <androidx.constraintlayout.motion.widget.MotionLayout
@@ -28,11 +43,6 @@
             android:layout_height="0dp"
             android:text="My Sticky Button" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fatih Koçak"/>
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 
